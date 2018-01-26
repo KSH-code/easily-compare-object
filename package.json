@@ -1,0 +1,39 @@
+{
+  "name": "easily-compare-object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run standard && node ./node_modules/mocha/bin/mocha $(find ./test -name '*.js') --require mocha-clean --reporter=mocha-better-spec-reporter",
+    "standard": "standard \"test/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSH-code/easily-compare-object.git"
+  },
+  "author": "KSH-Code <tjdgnsqn133@gmail.com> (github.com/ksh-code)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KSH-code/easily-compare-object/issues"
+  },
+  "homepage": "https://github.com/KSH-code/easily-compare-object#readme",
+  "keywords": [
+    "easily",
+    "compare",
+    "object",
+    "objects",
+    "object",
+    "check"
+  ],
+  "dependencies": {
+    "chai": "^4.1.2",
+    "easily-expect": "^0.1.7",
+    "fs": "0.0.1-security",
+    "mocha-better-spec-reporter": "^3.1.0",
+    "mocha-clean": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0",
+    "standard": "^10.0.3"
+  }
+}
