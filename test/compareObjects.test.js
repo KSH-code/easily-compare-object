@@ -13,7 +13,13 @@ describe('Test compare objects', () => {
   it('simple object3', () => {
     checkEqual(true, easilyCompareObject({ a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }))
   })
-  it('simple object4', () => {
+  it('simple object4 false', () => {
     checkEqual(false, easilyCompareObject({ a: 1, b: { a: 4 } }, { a: 1, b: { a: 3 } }))
+  })
+  it('simple objects', () => {
+    checkEqual(true, easilyCompareObject({ a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }))
+  })
+  it('simple objects false', () => {
+    checkEqual(false, easilyCompareObject({ a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 4 } }))
   })
 })

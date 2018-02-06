@@ -8,6 +8,8 @@ npm i --save easily-compare-object
 const easilyCompareObject = require('../index')
 
 easilyCompareObject({ a: 1, b: { a: 4 } }, { a: 1, b: { a: 3 } })) // true
+easilyCompareObject({ a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 4 } })) // false
+easilyCompareObject({ a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } }, { a: 1, b: { a: 3 } })) // true
 ```
 ## Example
 * [compareObjects](https://github.com/KSH-code/easily-compare-object/blob/master/test/compareObjects.test.js)g

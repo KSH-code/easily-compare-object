@@ -1,14 +1,14 @@
-module.exports = function checkAllProperty (obj1, obj2) {
-  let obj1Keys = 0
-  let obj2Keys = 0
-  for (let key in obj1) {
-    obj1Keys++
-    if (typeof obj1[key] === 'object') {
-      if (checkAllProperty(obj1[key], obj2[key]) === false) return false
-    } else if (obj2[key] !== obj1[key]) return false
+module.exports = function checkAllProperty (...obj) {
+  if (obj.length <= 1) return true
+  for (let i = 0; i < obj.length - 1; i++) {
+    const obj1 = obj[i]
+    const obj2 = obj[i + 1]
+    for (let key in obj1) {
+      if (typeof obj1[key] === 'object') {
+        if (checkAllProperty(obj1[key], obj2[key]) === false) return false
+      } else if (obj2[key] !== obj1[key]) return false
+    }
+    if (Object.keys(obj1).length !== Object.keys(obj2).length) return false
   }
-  for (let key in obj2) {
-    obj2Keys++
-  }
-  return obj1Keys === obj2Keys
+  return true
 }
