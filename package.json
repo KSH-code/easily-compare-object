@@ -1,7 +1,7 @@
 {
   "name": "easily-compare-object",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.3",
+  "description": "easily-js 로 통합 됐습니다.",
   "main": "index.js",
   "scripts": {
     "test": "npm run standard && node ./node_modules/mocha/bin/mocha $(find ./test -name '*.js') --require mocha-clean --reporter=mocha-better-spec-reporter",
@@ -28,6 +28,7 @@
   "dependencies": {
     "chai": "^4.1.2",
     "easily-expect": "^0.1.7",
+    "easily-js": "^1.0.0",
     "fs": "0.0.1-security",
     "mocha-better-spec-reporter": "^3.1.0",
     "mocha-clean": "^1.0.0"
