@@ -1,7 +1,7 @@
 {
   "name": "easily-compare-object",
   "version": "1.0.0",
-  "description": "",
+  "description": "easily-js 로 변경 됐습니다.",
   "main": "index.js",
   "scripts": {
     "test": "npm run standard && node ./node_modules/mocha/bin/mocha $(find ./test -name '*.js') --require mocha-clean --reporter=mocha-better-spec-reporter",

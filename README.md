@@ -10,4 +10,4 @@ const easilyCompareObject = require('../index')
 easilyCompareObject({ a: 1, b: { a: 4 } }, { a: 1, b: { a: 3 } })) // true
 ```
 ## Example
-* [compareObjects](https://github.com/KSH-code/easily-compare-object/blob/master/test/compareObjects.test.js)
+* [compareObjects](https://github.com/KSH-code/easily-compare-object/blob/master/test/compareObjects.test.js)g
