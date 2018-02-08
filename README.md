@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/KSH-code/easily-compare-object.svg?branch=master)](https://travis-ci.org/KSH-code/easily-compare-object)
 ![Npm Version](https://img.shields.io/npm/v/easily-compare-object.svg?style=flat-square)
+# UPDATE
+https://www.npmjs.com/package/easily-js
 # HOW TO USE ?
 ```
 npm i --save easily-compare-object
